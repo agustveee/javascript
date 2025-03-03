@@ -43,3 +43,18 @@ student.subjects.push("Art");
 
 console.log(student);
 
+// 4 Challenge Task
+let recipe = {
+    name: "Pasta Salad",
+    ingredients: [
+        { name: "Pasta", quantity: "2 cups" },
+        { name: "Tomatoes", quantity: "1 cup" }
+    ],
+    isVegetarian: true
+};
+
+recipe.ingredients.push({ name: "Olive Oil", quantity: "2 tbsp" });
+
+console.log(recipe.ingredients[1].name);
+
+console.log(recipe);
