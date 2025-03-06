@@ -70,16 +70,4 @@ let sum = reduce([1, 2, 3], function(acc, num) { return acc + num; }, 0);
 console.log(sum); 
 // Predicted Output: 6
 
-// 6. Includes Check
-function includes(array, callback) {
-    for (let i = 0; i < array.length; i++) {
-        if (callback(array[i])) {
-            return true;
-        }
-    }
-    return false;
-}
 
-let includesResult = includes([1, 2, 3], function(val) { return val === 2; });
-console.log(includesResult); 
-// Predicted Output: true
