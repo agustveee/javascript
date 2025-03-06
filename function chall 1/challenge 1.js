@@ -10,7 +10,7 @@ function calculateSum(arr) {
 let numbers = [1, 2, 3, 4];
 console.log("Sum:", calculateSum(numbers));
 
-// Prected Output: 10
+// Predicted Output: 10
 
 // Challenge 2
 function isEven(num) {
@@ -25,10 +25,10 @@ console.log(isEven(4));
 console.log(isEven(7));
 console.log(isEven(0));
 
-// Prected Output:
-// true
-// false
-// true
+/** Predicted Output:
+true
+false
+true */
 
 // Challenge 3
 function greet(name) {
@@ -44,10 +44,10 @@ function personalizedGreeting(names) {
 let friends = ["Alice", "Bob", "Charlie"];
 personalizedGreeting(friends);
 
-// Prected Output: 
-// Hello, Alice!
-// Hello, Bob!
-// Hello, Charlie!
+/** Predicted Output: 
+Hello, Alice!
+Hello, Bob!
+Hello, Charlie! */
 
 // Challenge 4
 function reverseArray(arr) {
@@ -62,6 +62,24 @@ let originalArray = [10, 20, 30];
 console.log(reverseArray(originalArray));
 console.log(originalArray);
 
-// Prected Output:
-// [ 30, 20, 10 ]
-// [ 10, 20, 30 ]
+/** Prected Output:
+[ 30, 20, 10 ]
+[ 10, 20, 30 ] */
+
+// Challenge 5
+function multiplyMatrix(matrix) {
+    for (let i = 0; i < matrix.length; i++) {
+        for (let j = 0; j < matrix[i].length; j++) {
+        matrix[i][j] *= 2;
+        }
+    }
+    return matrix;
+}
+  
+  let matrix = [
+    [1, 2],
+    [3, 4],
+  ];
+console.log(multiplyMatrix(matrix));
+
+// Predicted Output: [ [ 2, 4 ], [ 6, 8 ] ]
