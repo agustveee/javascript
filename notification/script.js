@@ -11,18 +11,18 @@ function addNotifications() {
         createNotification("You have a new message!");
     }
 
-    notificationCount++; // Increases notifications count on each click
+    notificationCount++;
 }
 
 function createNotification(message) {
     const notificationContainer = document.getElementById("notificationContainer");
 
-    // Create notification list item
+    // notification list item
     const notification = document.createElement("li");
     notification.className = "notification";
     notification.textContent = message;
 
-    // Create close button
+    // close button
     const closeBtn = document.createElement("button");
     closeBtn.className = "close-btn";
     closeBtn.textContent = "X";
@@ -30,7 +30,7 @@ function createNotification(message) {
         notification.remove();
     };
 
-    // Append elements
+    // elements
     notification.appendChild(closeBtn);
     notificationContainer.insertBefore(notification, notificationContainer.firstChild);
 }
