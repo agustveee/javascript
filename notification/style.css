@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+}
+
+#showNotification {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#notificationContainer {
+    max-width: 400px;
+    margin: auto;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid gray;
+    background: white;
+    border-radius: 5px;
+}
+
+.notification {
+    background: gray;
+    color: black;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+}
