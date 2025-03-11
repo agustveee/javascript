@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <section class="profile-container">
+            <article class="profile-card" id="profileCard">
+                <figure>
+                    <img id="profileImage" src="photo.png" alt="Profile Image">
+                </figure>
+                <h2 id="profileName">Lenard</h2>
+                <p id="profileBio">Lorem Ipsum</p>
+            </article>
+
+            <form>
+                <fieldset>
+
+                    <label for="nameInput">Update Name:</label>
+                    <input type="text" id="nameInput" value="Lenard">
+
+                    <label for="bioInput">Update Bio:</label>
+                    <input type="text" id="bioInput" value="Lorem Ipsum">
+
+                    <label for="imageInput">Update Image URL:</label>
+                    <input type="text" id="imageInput" placeholder="Enter Image URL" value="https://images.squarespace-cdn.com/content/v1/59aff755f5e231fa3dcb19da/1506377744516-8OXD4WRAQ7U2XF9CT6IG/computer-1295358_1280.png?format=750w">
+
+                    <label for="bgColorInput">Change Background Color:</label>
+                    <input type="color" id="bgColorInput">
+
+                    <button type="button" id="updateProfileBtn">Update Profile Card</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
