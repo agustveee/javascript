@@ -1,36 +1,23 @@
-document.getElementById("showNotification").addEventListener("click", function() {
-    addNotifications();
-});
+const showNotifButton = document.getElementById("shownotif");
+const notificationContainer = document.getElementById("notification-container");
 
-let notificationCount = 1;
+showNotifButton.addEventListener("click", addNotification);
 
-function addNotifications() {
-    const notificationContainer = document.getElementById("notificationContainer");
+function addNotification() {
+    const notification = document.createElement("article");
+    notification.classList.add("notification");
+    notification.innerHTML = `
+        <span>You have a new message!</span>
+        <button class="close-btn" aria-label="Close Notification">&times;</button>
+    `;
 
-    for (let i = 0; i < notificationCount; i++) {
-        createNotification("You have a new message!");
-    }
-
-    notificationCount++;
-}
-
-function createNotification(message) {
-    const notificationContainer = document.getElementById("notificationContainer");
-
-    // notification list item
-    const notification = document.createElement("li");
-    notification.className = "notification";
-    notification.textContent = message;
-
-    // close button
-    const closeBtn = document.createElement("button");
-    closeBtn.className = "close-btn";
-    closeBtn.textContent = "X";
-    closeBtn.onclick = function() {
+    notification.querySelector(".close-btn").addEventListener("click", () => {
         notification.remove();
-    };
+    });
 
-    // elements
-    notification.appendChild(closeBtn);
-    notificationContainer.insertBefore(notification, notificationContainer.firstChild);
+    notificationContainer.prepend(notification);
+
+    setTimeout(() => {
+        notification.remove();
+    }, 5000);
 }
