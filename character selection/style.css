@@ -1,0 +1,73 @@
+body {
+    background-color: #faf8f8;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+    flex-direction: row;
+}
+
+.character-base {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.character-base img {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#helmet { 
+    top: 0;
+}
+
+#armor {
+    top: 120px;
+}
+
+#boots {
+    top: 260px;
+}
+
+#weapon {
+    top: 380px; 
+}
+
+.selection-menu {
+    text-align: left;
+}
+
+.selection-menu img {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    background: #c4bdbd;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.selection-menu img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.selected {
+    border: 3px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
